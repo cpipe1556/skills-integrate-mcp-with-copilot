@@ -35,9 +35,42 @@ main {
   justify-content: center;
 }
 
+.toolbar {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.filter-group label {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.filter-group input,
+.filter-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #d0d7de;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
 @media (min-width: 768px) {
   main {
+    display: grid;
     grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+
+  .toolbar {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -68,6 +101,23 @@ section h3 {
 .activity-card h4 {
   margin-bottom: 10px;
   color: #0066cc;
+}
+
+.activity-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.category-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background-color: #e8f0fe;
+  color: #1a237e;
+  font-size: 0.75rem;
+  font-weight: bold;
 }
 
 .activity-card p {
