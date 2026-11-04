@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎉 Congratulations cpipe1556! 🎉
+# 🎉 Congratulations Felipe Patiño! 🎉
 
 <img src="https://octodex.github.com/images/welcometocat.png" height="200px" />
 
